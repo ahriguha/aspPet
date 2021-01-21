@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@@ionic/core/css/ionic.bundle.css" />
+
+    <script src="/js/data.js"></script>
+    <script src="/js/my.js"></script>
+
+
+    <title>Document</title>
+</head>
+<body>
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>
+                Guitars
+            </ion-title>
+        </ion-toolbar>
+
+    </ion-header>
+    <section id="main">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="12" size-md="6" offset-md="3">
+                    <ion-button id="add" color="success" size="large">
+                        <ion-icon name="add-circle-outline"></ion-icon>
+                    </ion-button>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="12" size-md="6" offset-md="3">
+                    <ion-list id="list">
+                        <ion-list-header>
+                            <ion-label>Guitar</ion-label>
+                        </ion-list-header>
+                    </ion-list>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </section>
+    <section id="edit">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="12" size-md="6" offset-md="3">
+                    <ion-item>
+                        <ion-label position="floating">Guitar name</ion-label>
+                        <ion-input id="name"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label position="floating">Guitar price</ion-label>
+                        <ion-input id="price"></ion-input>
+                    </ion-item>
+                    <ion-button id="save" color="primary" size="medium" float-right style="margin-top: 20px;">
+                        <ion-icon name="checkmark"></ion-icon>
+                    </ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </section>
+</body>
+</html>
